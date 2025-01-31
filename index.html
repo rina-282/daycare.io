@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Sidebar Menu | Dark-Light Mode</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Include Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Optional: Increase the height of the card */
+        .card {
+            height: 400px;
+            /* Adjust this value to increase the card height */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Ensure the content stays spread out */
+        }
+
+        .card-img-top {
+            height: 250px;
+            /* Adjust the image height */
+            object-fit: cover;
+            /* Ensure the image covers the space */
+        }
+
+        /* Optional: Add a smooth hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            /* Lift the card on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            /* Add a subtle shadow on hover */
+        }
+    </style>
+
+
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">EduNest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#why-us">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subscriptions">Subscribe Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#help">Help Center</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#terms">Terms & Conditions</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Join Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="signup-page.html">Create Account</a></li>
+                            <li><a class="dropdown-item" href="login.html">Log In</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Carousel images  -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img3.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
+        <br><br>
+
+
+
+
+
+        <!-- Why Us Section -->
+        <div id="why-us" class="container my-5">
+            <h1 class="fs-1 text-center text-warning">Why Us?</h1>
+            <div class="row align-items-stretch">
+                <div class="col-md-6 col-lg-6 col-sm-12 p-3 d-flex">
+                    <div class="p-4 bg-light rounded shadow flex-fill d-flex flex-column justify-content-center">
+                        <h4 class="text-primary text-center fw-bold">At Little Space, We Offer More Than Just Childcare
+                        </h4>
+                        <ul class="list-unstyled mt-3">
+                            <li class="mb-2"><strong class="text-dark">🔹 A Nurturing Environment –</strong> A safe,
+                                loving, and inspiring space for your child.</li>
+                            <li class="mb-2"><strong class="text-dark">🔹 Personalized Learning –</strong> Tailored
+                                education to meet every child’s unique needs.</li>
+                            <li class="mb-2"><strong class="text-dark">🔹 Holistic Growth –</strong> Encouraging
+                                curiosity, creativity, and emotional intelligence.</li>
+                            <li class="mb-2"><strong class="text-dark">🔹 Second Home Feel –</strong> A warm, welcoming
+                                atmosphere where every child feels valued.</li>
+                        </ul>
+                        <!-- <div class="text-center mt-3">
+                            <button class="btn btn-primary px-4 py-2">Learn More</button>
+                        </div> -->
+                        <div class="text-center mt-3">
+                            <a href="learn-more.html" class="btn btn-primary px-4 py-2">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-sm-12 p-3 d-flex">
+                    <div class="p-4 bg-light rounded shadow flex-fill d-flex flex-column justify-content-center">
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><strong class="text-primary"> Safe & Secure Environment –</strong> Advanced
+                                security and trained staff for complete peace of mind.</li>
+                            <li class="mb-2"><strong class="text-primary"> Early Learning & Development –</strong>
+                                Fun-based cognitive, emotional, and social growth programs.</li>
+                            <li class="mb-2"><strong class="text-primary"> Qualified & Caring Staff –</strong> Certified
+                                educators providing individual attention.</li>
+                            <li class="mb-2"><strong class="text-primary"> Healthy & Nutritious Meals –</strong>
+                                Balanced, child-friendly meals promoting healthy growth.</li>
+                            <li class="mb-2"><strong class="text-primary"> A Home Away From Home –</strong> A warm,
+                                loving environment where children feel safe.</li>
+                            <li class="mb-2"><strong class="text-primary"> Parental Engagement –</strong> Regular
+                                updates and communication to keep parents connected.</li>
+                            <li><strong class="text-primary"> Flexible & Affordable –</strong> Full-time and part-time
+                                daycare options for all budgets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="services" class="text-center mb-4 text-warning">Our Services</h2>
+        <div class="container text-center mb-5">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Empowering your child with skills, security, and nutrition for a brighter future."</p>
+
+            </blockquote>
+        </div>
+
+        <!-- Card Group -->
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Service Card 1 -->
+                <div class="col">
+                    <div class="card animate__animated animate__fadeIn">
+                        <img src="images/images.jpeg" class="card-img-top" alt="Security">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Security</h5>
+                            <p class="card-text">Your Child's Security is Our First Priority</p>
+                            <p class="card-text"><small class="text-body-secondary">9.6k views</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="col">
+                    <div class="card animate__animated animate__fadeIn animate__delay-1s">
+                        <img src="images/image5.jpeg" class="card-img-top" alt="Development Skills">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Development Skills</h5>
+                            <p class="card-text">The hard work will Develop Skills with Fun Included</p>
+                            <p class="card-text"><small class="text-body-secondary">14k views</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="col">
+                    <div class="card animate__animated animate__fadeIn animate__delay-2s">
+                        <img src="images/image6.jpeg" class="card-img-top" alt="Meal and Nutrition">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning">Meal and Nutrition</h5>
+                            <p class="card-text">This will help your child to do more progressive work better, by
+                                intaking
+                                balanced protein meals</p>
+                            <p class="card-text"><small class="text-body-secondary">15.6k views</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+        <!-- Subscriptions Section -->
+        <h2 id="subscriptions" class="text-center mb-4 text-warning">Subscribe Us</h2>
+        <div class="container text-center mb-5">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Join us: Your little one's second home."</p>
+
+            </blockquote>
+        </div>
+        <section class="container py-5">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="card border-dark shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title">Hourly Plan</h2>
+                            <p class="text-muted">Perfect for short-term care</p>
+                            <h3 class="text-dark">₹359/hour</h3>
+                            <ul class="list-unstyled">
+                                <li>Up to 8 hours a day</li>
+                                <li>Flexible time slots</li>
+                                <li>Pay as you go</li>
+                            </ul>
+                            <button class="btn btn-warning text-dark fw-bold">Select Hourly Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-dark shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title">Daily Plan</h2>
+                            <p class="text-muted">Ideal for full-day care</p>
+                            <h3 class="text-dark">₹1799/day</h3>
+                            <ul class="list-unstyled">
+                                <li>8 AM to 6 PM</li>
+                                <li>Snacks and meals included</li>
+                                <li>Weekly discount</li>
+                            </ul>
+                            <button class="btn btn-warning text-dark fw-bold">Select Daily Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-dark shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title">Weekly Plan</h2>
+                            <p class="text-muted">Best value for consistent care</p>
+                            <h3 class="text-dark">₹8499/week</h3>
+                            <ul class="list-unstyled">
+                                <li>Monday to Friday</li>
+                                <li>Full-day care</li>
+                                <li>Meals included</li>
+                            </ul>
+                            <button class="btn btn-warning text-dark fw-bold">Select Weekly Plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card border-warning bg-dark text-light shadow-lg">
+                        <div class="card-body position-relative">
+                            <span
+                                class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle mt-2 px-3">Best
+                                Value</span>
+                            <h2 class="card-title text-warning">Monthly Plan</h2>
+                            <p class="text-muted">Great for long-term needs</p>
+                            <h3 class="text-warning">₹18999/month</h3>
+                            <ul class="list-unstyled">
+                                <li>Monday to Friday</li>
+                                <li>Full-day care</li>
+                                <li>Priority booking</li>
+                            </ul>
+                            <button class="btn btn-warning text-dark fw-bold">Select Monthly Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Center Section -->
+        <div id="help" class="container mt-5">
+            <h2 class="text-center mb-4 text-warning">Help Center</h2>
+
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Common Issues</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">How to reset my password?</li>
+                                <li class="list-group-item">How to update my profile information?</li>
+                                <li class="list-group-item">How to contact customer support?</li>
+                                <li class="list-group-item">How to manage my subscriptions?</li>
+                                <li class="list-group-item">How to report a problem?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Need More Help?</h5>
+                            <p>If you have any other questions or need further assistance, please fill out the form
+                                below:</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"
+                                        placeholder="Describe your issue or question" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Terms & Conditions Section -->
+        <div id="terms" class="container mt-5">
+            <h2 class="text-center mb-4 text-warning">Terms & Conditions</h2>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Overview</h5>
+                    <p>Welcome to our website! By accessing or using our services, you agree to comply with the
+                        following terms and conditions:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">All users must be at least 18 years old.</li>
+                        <li class="list-group-item">Users are responsible for maintaining the confidentiality of their
+                            account information.</li>
+                        <li class="list-group-item">We reserve the right to modify or terminate our services at any
+                            time.</li>
+                        <li class="list-group-item">Users must not engage in any illegal activities while using our
+                            services.</li>
+                        <li class="list-group-item">We are not liable for any damages resulting from the use of our
+                            services.</li>
+                    </ul>
+                    <p class="mt-3">For more detailed information, please read our <span class="text-primary"
+                            data-toggle="modal" data-target="#termsModal" style="cursor: pointer;">full terms and
+                            conditions</span>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="termsModalLabel">Full Terms & Conditions</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>1. Introduction</h5>
+                        <p>These terms and conditions govern your use of our website and services.</p>
+                        <h5>2. User Responsibilities</h5>
+                        <p>As a user, you agree to provide accurate information and comply with all applicable laws.</p>
+                        <h5>3. Modifications</h5>
+                        <p>We may update these terms from time to time. You will be notified of any changes.</p>
+                        <h5>4. Limitation of Liability</h5>
+                        <p>We are not liable for any indirect or consequential losses arising from your use of our
+                            services.</p>
+                        <h5>5. Governing Law</h5>
+                        <p>These terms are governed by the laws of the jurisdiction in which we operate.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <footer class="bg-light text-center text-lg-start mt-5">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About Us</h5>
+                        <p>EduNest is dedicated to providing a nurturing environment for children to learn and grow.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">FAQ</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-dark">What is EduNest?</a></li>
+                            <li><a href="#" class="text-dark">How do I enroll my child?</a></li>
+                            <li><a href="#" class="text-dark">What are the operating hours?</a></li>
+                            <li><a href="#" class="text-dark">How can I contact support?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Contact Information</h5>
+                        <p><strong>Email:</strong> support@example.com</p>
+                        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                        <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3 bg-light">
+                <p>© 2025 EduNest. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and dependencies -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- New script code added -->
+        <script>
+            var myCarousel = document.querySelector('#carouselExampleAutoplaying');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                ride: 'carousel'
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
